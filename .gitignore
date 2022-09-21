@@ -1,6 +1,8 @@
 /webalizer
 /dashboard
 
+/lab7/calculator-app/vendor
+
 applications.html
 bitnami.css
 favicon.ico
