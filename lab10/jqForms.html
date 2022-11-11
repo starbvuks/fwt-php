@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      form {
+        font-family: "Garamond";
+        padding: 10px;
+      }
+      .inp {
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        border-width: 1px;
+        padding: 5px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body style="background-color: aliceblue">
+    <form>
+      First name :
+      <input type="text" id="fname" class="inp" /> <br />
+      <br />
+      Last name :
+      <input type="text" id="lname" class="inp" /> <br />
+      <br />
+      Email ID:
+      <input type="text" id="eid" class="inp" /> <br />
+      <br />
+      <input
+        type="submit"
+        id="subm"
+        style="
+          padding: 5px;
+          border-radius: 10px;
+          border-width: 1px;
+          background-color: #f6f6f6;
+        "
+      />
+    </form>
+    <p id="p1"></p>
+
+    <script>
+      $(document).ready(function () {
+        $("#subm").click(function (e) {
+          e.preventDefault();
+          var fname = $("#fname").val();
+          var lname = $("#lname").val();
+          var eid = $("#eid").val();
+          $("#p1").append("The first name is : " + fname);
+          $("#p1").append("<br> The last name is : " + lname);
+          $("#p1").append("<br> The email id is : " + eid);
+        });
+      });
+    </script>
+    <!-- <script src="jqForms.js"></script> -->
+  </body>
+</html>

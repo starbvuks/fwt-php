@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <nav class="navbar bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Woxsen Blog</a>
+        <div class="d-flex align-items-start w-50">
+          <button class="btn me-4 text-info" type="submit">About</button>
+          <button class="btn me-4 text-info" type="submit">Forums</button>
+          <button class="btn me-4 text-info" type="submit">Contact</button>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Subjects
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">CSE</a></li>
+              <li><a class="dropdown-item" href="#">AR</a></li>
+              <li><a class="dropdown-item" href="#">DS</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </body>
+</html>

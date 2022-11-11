@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .panel {
+            text-align: center;
+        }
+        img {
+            padding: 20px;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            
+        }
+        button {
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p> FWT Quiz</p>
+	<div class="panel">
+		<div class="result">
+		</div>
+		<div class="question-container" id="question">
+            the entire web is based on this langauge: __________  ?
+		</div>
+		<div class="option-container">
+            <img id="myImage" src="https://w7.pngwing.com/pngs/859/425/png-transparent-light-bulb-illustration-incandescent-light-bulb-lamp-bulb-candle-product-light-thumbnail.png" style="width:100px">
+			<div class="options">
+
+                <button class="option" onclick="document.getElementById('myImage').src='https://w7.pngwing.com/pngs/859/425/png-transparent-light-bulb-illustration-incandescent-light-bulb-lamp-bulb-candle-product-light-thumbnail.png'" id="op1" >A. Clojure</button>
+                <br>
+                
+                <button onclick="document.getElementById('myImage').src='https://static.wixstatic.com/media/2cd43b_31844ce00cf04315a0e69681e3f97740~mv2.png/v1/fill/w_256,h_256,q_90/2cd43b_31844ce00cf04315a0e69681e3f97740~mv2.png'"> B. Javascript </button></button>
+                <br>
+                <button class="option" onclick="document.getElementById('myImage').src='https://w7.pngwing.com/pngs/859/425/png-transparent-light-bulb-illustration-incandescent-light-bulb-lamp-bulb-candle-product-light-thumbnail.png'" id="op3">C. GoLang</button>
+                <br>
+                <button class="option" onclick="document.getElementById('myImage').src='https://w7.pngwing.com/pngs/859/425/png-transparent-light-bulb-illustration-incandescent-light-bulb-lamp-bulb-candle-product-light-thumbnail.png'" id="op4">D. None of the above</button>
+            </div>
+            </div>
+            <div class="navigation">
+			
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
