@@ -1,7 +1,7 @@
 /webalizer
 /dashboard
 
-/lab7-unit-testing/vendor
+./lab7-unit-testing/vendor
 
 applications.html
 bitnami.css
